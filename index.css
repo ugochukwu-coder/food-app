@@ -103,6 +103,7 @@ header p {
 .product__title,
 .product__content {
   margin-bottom: 10px;
+  
 }
 
 .btn {
@@ -112,6 +113,8 @@ header p {
   border-radius: 50%;
   background-color: #ffffff;
   font-size: 1.25rem;
+  cursor: pointer;
+  transform: 2s;
 }
 
 .btn:hover {
@@ -221,6 +224,20 @@ span, .remove {
   flex-direction: column;
   
 }
+
+/* .modal__close{
+  position: relative;
+  margin-top: 0;
+} */
+
+#modal__close-btn{
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+
+}
+
 .form__heding{
   font-size: 1.5rem;
   text-align: center;
@@ -260,6 +277,19 @@ span, .remove {
   .container{
     margin: 0;
   }
+
+  .product__title,
+  .product__content {
+  font-size: 1.142rem;
+  margin-right: 5px;
+  
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  
+}
 }
 
 

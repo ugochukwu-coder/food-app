@@ -24,38 +24,13 @@
       </header>
       <main class="main__section" id="main__menu">
 
-        <!-- main section -->
+        <!-- RENDER MENU HERE -->
 
       </main>
          
             
       <div class="order__heading hidden" id="order">
-        <p>Your Order</p>
-        <p class="order__paragraph">
-          pizza
-          <span class="order-emoji"></span>
-          <span>X</span>
-          <span>1</span>
-          <button class="remove">remove</button>
-          <span>$123</span>
-        </p>
-        <p class="order__paragraph">
-          pizza
-          <span class="order-emoji"></span>
-          <span>X</span>
-          <span>1</span>
-          <button class="remove">remove</button>
-          <span>$123</span>
-        </p>
-        <p class="order__paragraph">
-          pizza
-          <span class="order-emoji"></span>
-          <span>X</span>
-          <span>1</span>
-          <button class="remove">remove</button>
-          <span>$123</span>
-        </p>
-  
+          <!-- SHOW ORDER ITEMS -->
       </div>
 
 
@@ -72,12 +47,14 @@
 
 
       <div class="modal hidden" id="modal">
-        <button class="close__modal-btn" id="modal-close-btn">close</button>
+        <div class="modal__close">
+            <button class="btn close__modal-btn" id="modal__close-btn">X</button>
+        </div>
         <form action="" class="form__modal">
           <h2 class="form__heding">Enter Card details</h2>
           <input type="text" placeholder="Enter your name" id="cardName" required>
-          <input type="number" placeholder="Enter card number" id="cardNumber" min="14" max="14" required>
-          <input type="number" placeholder="Enter CVV" id="cardCvv" minlength="3" maxlength="3" required >
+          <input type="number" placeholder="Enter card number" id="cardNumber" pattern="[0-9]{10}" required>
+          <input type="number" placeholder="Enter CVV" id="cardCvv" pattern="[0-9]{3}" required >
           <button class="make__payment submit-btn" id="submit-btn">Pay</button>
         </form>
       </div>

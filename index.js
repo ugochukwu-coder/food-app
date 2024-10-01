@@ -21,7 +21,7 @@ document.addEventListener('click', (e) => {
     completeOrder()
   }
 
-  else if (e.target.id === 'close__modal-btn'){
+  else if (e.target.id === 'modal__close-btn'){
     modal.style.display = 'none'
   }
 
@@ -131,6 +131,7 @@ successMsg.style.display = "none"
 
 // pay for transaction
 function makePayment(){
+  
   if(cardName.value && cardNumber.value && cardCvv.value){
     modal.style.display = "none"
     orderEl.classList.add('hidden')
@@ -147,7 +148,7 @@ function makePayment(){
 function disappear(){
   setTimeout(() =>{
     successMsg.style.display = "none"
-    },3000)
+    },4000)
 }
 
 
